@@ -1,0 +1,218 @@
+:root {
+  --green: #00A676;
+  --white: #ffffff;
+  --almond: #E0D0C1;
+  --isabelline: #f3eae1;
+  --brown: #69423A;
+  --red: #CC3000;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3
+h4
+ {
+  font-weight: 300;
+  font-family: 'DM Serif Display', serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+/* Login Page ---------------------------------------------------------------------------------------- */
+
+.logo-form {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--isabelline);
+}
+.logo-form .logo {
+  width: 300px;
+}
+.logo-form .login {
+  width: 300px;
+}
+.connexion button {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+.connexion button:hover {
+  background-color: #69423A;
+  border-color: #69423A;
+}
+@media screen and (min-width:576px) {
+  .logo-form .connexion {
+    width: 425px;
+}
+}
+
+/* Navbar ---------------------------------------------------------------------------------------- */
+
+.navbar {
+  max-width: 1440px;
+  margin: auto;
+  background-color: var(--almond);
+}
+.nav-link {
+  color: var(--brown);
+  letter-spacing: 0.25em;
+  font-size: 0.8em;
+}
+.nav-link:hover {
+  color: var(--green);
+}
+
+/* Main ---------------------------------------------------------------------------------------- */
+
+.hero {
+  margin: auto;
+  max-width: 1440px;
+  min-height: 800px;
+}
+.txt-box {
+  margin-top: 20%;
+  padding: 50px;
+}
+.txt-box h1 {
+  color: var(--almond);
+  font-size: 4em;
+  font-family: 'DM Serif Display', serif;
+}
+.txt-box h4 {
+  color: var(--almond);
+  font-size: 1.8em;
+  font-weight: 300;
+}
+.txt-box button {
+  margin: 2%;
+}
+.txt-box button:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+.content-box {
+  background-color: var(--isabelline);
+  max-width: 1440px;
+  margin: auto;
+  color: var(--brown);
+}
+.content-box h2 {
+  font-size: 3em;
+}
+.last-button {
+  max-width: 1440px;
+  width: 100%;
+  height: 200px;
+  background-color: var(--isabelline);
+}
+.last-button button {
+  margin: auto;
+}
+
+/* Button --------------------------------------------------------------------------------- */
+
+.bt-classic{
+  background-color: var(--brown);
+  color: var(--white);
+  letter-spacing: 0.2em;
+}
+.bt-classic:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+.bt-other{
+  background-color: var(--almond);
+  color: var(--brown);
+  letter-spacing: 0.2em;
+}
+.bt-other:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+/* Pizzas Page --------------------------------------------------------------------------------- */
+
+main {
+  max-width: 1440px;
+  margin: auto;
+  background-color: var(--isabelline);
+}
+
+.pizza-title h1 {
+  color: var(--brown);
+}
+
+.pizza-box {
+  background-color: var(--brown);
+  border-radius: 20px;
+  
+}
+.pizza-box h3 {
+  color: var(--almond);
+  font-family: 'DM Serif Display', serif;
+}
+.pizza-box p {
+  color: var(--isabelline);
+  letter-spacing: 0.2em;
+}
+
+
+/* Modal --------------------------------------------------------------------------------- */
+
+.bg-body-modal {
+  background-color: var(--isabelline);
+}
+
+
+/* Order Page --------------------------------------------------------------------------------- */
+
+.cardspace {
+  width: 300px;
+}
+
+/* Footer ---------------------------------------------------------------------------------------- */
+
+footer {
+  background-color: var(--brown);
+  max-width: 1440px;
+  color: var(--almond);
+  font-weight: 300;
+}
+footer i {
+  font-size: 2em;
+}
+footer i:hover {
+  color: var(--white);
+}
+footer span {
+ font-weight: 400;
+ font-size: 1.2em;
+}
