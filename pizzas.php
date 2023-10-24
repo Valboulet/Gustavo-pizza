@@ -48,31 +48,39 @@
     <h1 class="py-5">Choisissez Votre Pizza</h1>
   </div>
   <div class="row justify-content-center row-cols-1 row-cols-sm-2 gy-3 px-5">
-    <div class="row align-items-center mx-3 my-3 pizza-box">
-      <div class="col-8 ps-4">
-        <h3>La Vegetariano</h3>
-        <p>Ingredients Lorem, ipsum dolor.</p>
-        <button type="button" class="btn bt-other">CHOISIR</button>
+
+    <div class="card text-center border-0 py-4 px-4 m-3 pizza-box">
+      <div class="card-header bg-transparent border-0">
+      <div>
+          <img src="./assets/images/La Vegetariano.png" alt="">
+        </div>
+        <h3 class="mt-2">La Vegetariano</h3>
       </div>
-      <div class="col-4">
-        <img src="./assets/images/La Vegetariano.png" alt="">
+      <div class="card-body">
+        <div>
+          <p>Sauce tomate, Mozarella fior di latte, Poivrons, Champignons, Oignons, Olives noires</p>
+        </div>
+      </div>
+      <div class="card-footer bg-transparent border-0">
+        <button type="button" class="btn bt-other" data-bs-toggle="modal"data-bs-target="#selectExtraModal">CHOISIR</button>
       </div>
     </div>
+
   </div>
 
   <!-- Modal select Extra/Drink -->
 
-  <div class="modal fade" id="selectExtraModal" tabindex="-1" aria-labelledby="selectExtraModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  <div class="modal fade border-0" id="selectExtraModal" tabindex="-1" aria-labelledby="selectExtraModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ext-modal">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header border-0">
           <div>
             <h1 class="modal-title fs-3" id="selectExtraModalLabel">Nom Pizza PHP</h1>
-            <h4>Prix PHP/JS</h4>
+            <h4>Prix Pizza PHP/JS</h4>
           </div>  
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body bg-body-modal">
+        <div class="modal-body border-0">
           <div>
             <h5>Supplément (facultatif)</h5>
             <ul class="list-group">
@@ -101,7 +109,7 @@
           <hr>
           <div>
             <h5>Boisson</h5>
-            <ul class="list-group">
+            <ul class="list-group border-0">
               <li class="list-group-item">
                 <input class="form-check-input me-1" type="radio" name="listDrinkRadio" id="evianRadio">
                 <label for="evianRadio" class="form-check-label">Evian 50cl</label>
@@ -130,7 +138,7 @@
             </ul>
           </div>
         </div>
-        <div class="modal-footer d-flex justify-content-center">
+        <div class="modal-footer d-flex justify-content-center border-0">
           <button type="button" class="btn px-5 py-2 bt-classic">AJOUTER À MA COMMANDE</button>
         </div>
       </div>
@@ -140,7 +148,7 @@
 </main>
 
 <!-- Footer -->
-<footer class="container-fluid text-center">
+<footer class="container-fluid text-center" id="footer">
   <div class="row py-4">
     <div class="col-md-4 pt-5">
       <a class="navbar-brand" href="#">
@@ -156,9 +164,15 @@
     </div>
     <div class="col-md-4 pt-5">
       <span>SUIVEZ-VOUS</span><br><br>
-      <i class="bi bi-facebook mx-2"></i>
-      <i class="bi bi-instagram mx-2"></i>
-      <i class="bi bi-tiktok mx-2"></i>
+      <a href="">
+        <i class="bi bi-facebook mx-2"></i>
+      </a>
+      <a href="">
+        <i class="bi bi-instagram mx-2"></i>
+      </a>
+      <a href="">
+        <i class="bi bi-tiktok mx-2"></i>
+      </a>
     </div>
   </div><hr>
   <div class="row py-3">
@@ -166,7 +180,9 @@
       Copyright© 2023 - Gustavo Pizza
     </div>
     <div class="col-md-6">
-      Politique de confidentialité
+      <a href="">
+        <p>Politique de confidentialité</p>
+      </a>
     </div>
   </div>
 </footer>

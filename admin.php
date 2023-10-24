@@ -15,10 +15,10 @@
 <!-- Admin navbar -->
 <nav class="navbar sticky-top navbar-expand-md">
   <div class="container-fluid">
-    <a class="navbar-brand ms-5" href="#">
+    <a class="navbar-brand ms-4" href="#">
       <img src="./assets/images/Logo_Gustavo.png" alt="logo" width="70">
     </a>
-    <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse mt-sm-0 mt-4 ms-4" id="navbarTogglerDemo02">
@@ -45,7 +45,7 @@
 <div class="tab-content">
   <div class="tab-pane fade pt-5" id="div-commandes" role="tabpanel" aria-labelledby="btn-commandes" tabindex="0">
     <div class="text-center my-5">
-      <h2>COMMANDES</h2>
+      <h2>Commandes</h2>
       <h4>Date du jour : PHP</h4>
     </div>
     <div class="row justify-content-center row-cols-1 row-cols-sm-4 g-5 px-5">
@@ -186,7 +186,7 @@
 
   <div class="tab-pane fade pt-5" id="div-pizzas" role="tabpanel" aria-labelledby="btn-pizzas" tabindex="0">
     <div class="text-center my-5">
-      <h2>PIZZAS</h2>
+      <h2>Pizzas</h2>
     </div>
     <div class="row justify-content-center px-5">
       <div class="col-3 cardspace">
@@ -194,25 +194,27 @@
           <div class="card-body">
             <ul class="list-group list-group-flush">
               <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="#imageModal" data-bs-toggle="modal">
+                  <img class="" src="./assets/images/La Calzone.png" width="45px" alt="">
+                </a>
                 <a href="#" class="fs-5">La Calzone</a>
                 <button class="btn-close" type="button" aria-label="Delete" data-bs-toggle="modal" data-bs-target="#deleteModal"></button>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                <a href="#" class="fs-5">La Calzone</a>
-                <button class="btn-close" type="button" aria-label="Delete"></button>
+                <a href="#imageModal" data-bs-toggle="modal">
+                  <img class="" src="./assets/images/La Campania.png" width="45px" alt="">
+                </a>
+                <a href="#" class="fs-5">La Campania</a>
+                <button class="btn-close" type="button" aria-label="Delete" data-bs-toggle="modal" data-bs-target="#deleteModal"></button>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                <a href="#" class="fs-5">La Calzone</a>
-                <button class="btn-close" type="button" aria-label="Delete"></button>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <a href="#" class="fs-5">La Calzone</a>
-                <button class="btn-close" type="button" aria-label="Delete"></button>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="#imageModal" data-bs-toggle="modal">
+                  <img class="" src="./assets/images/La Vegetariano.png" width="45px" alt="">
+                </a>
                 <a href="#" class="fs-5">La Vegetariano</a>
-                <button class="btn-close" type="button" aria-label="Delete"></button>
+                <button class="btn-close" type="button" aria-label="Delete" data-bs-toggle="modal" data-bs-target="#deleteModal"></button>
               </li>
+
             </ul>
           </div>
           <div class="card-footer d-flex justify-content-center">
@@ -227,7 +229,7 @@
 
   <div class="tab-pane fade pt-5" id="div-extras" role="tabpanel" aria-labelledby="btn-extras" tabindex="0">
     <div class="text-center my-5">
-      <h2>EXTRAS</h2>
+      <h2>Extras</h2>
     </div>
     <div class="row justify-content-center px-5">
       <div class="col-3 cardspace">
@@ -264,7 +266,7 @@
 
   <div class="tab-pane fade pt-5" id="div-boissons" role="tabpanel" aria-labelledby="btn-boissons" tabindex="0">
     <div class="text-center my-5">
-      <h2>BOISSONS</h2>
+      <h2>Boissons</h2>
     </div>
     <div class="row justify-content-center px-5">
       <div class="col-3 cardspace">
@@ -307,15 +309,15 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-1" id="deleteModalLabel">Titre produit PHP</h1>
+          <h1 class="modal-title fs-2" id="deleteModalLabel">Suppression(produit PHP)</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           Voulez-vous vraiment supprimer ce produit ?
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-lg btn-primary bt-yes">OUI</button>
-          <button type="button" class="btn btn-lg btn-primary bt-no">NON</button>
+          <button type="button" class="btn btn-primary bt-yes">OUI</button>
+          <button type="button" class="btn btn-primary bt-no">NON</button>
         </div>
       </div>
     </div>

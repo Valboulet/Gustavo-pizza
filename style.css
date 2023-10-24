@@ -25,15 +25,13 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: var(--white);
-  color: var(--black);
+  color: var(--brown);
   font-weight: 400;
 }
 
 h1,
 h2,
-h3
-h4
- {
+h3 {
   font-weight: 300;
   font-family: 'DM Serif Display', serif;
 }
@@ -55,10 +53,10 @@ li {
   background-color: var(--isabelline);
 }
 .logo-form .logo {
-  width: 300px;
+  width: 200px;
 }
-.logo-form .login {
-  width: 300px;
+.logo-form p {
+  color: var(--brown);
 }
 .connexion button {
   background-color: var(--green);
@@ -89,26 +87,30 @@ li {
 .nav-link:hover {
   color: var(--green);
 }
+.nav-link:focus {
+  color: var(--green);
+}
 
 /* Main ---------------------------------------------------------------------------------------- */
 
 .hero {
   margin: auto;
   max-width: 1440px;
-  min-height: 800px;
+  min-height: 600px;
 }
 .txt-box {
-  margin-top: 20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
   padding: 50px;
 }
 .txt-box h1 {
   color: var(--almond);
-  font-size: 4em;
+  font-size: 3em;
   font-family: 'DM Serif Display', serif;
 }
 .txt-box h4 {
   color: var(--almond);
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: 300;
 }
 .txt-box button {
@@ -125,7 +127,7 @@ li {
   color: var(--brown);
 }
 .content-box h2 {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 .last-button {
   max-width: 1440px;
@@ -157,6 +159,30 @@ li {
   background-color: var(--green);
   color: var(--white);
 }
+.bt-yes {
+  background-color: var(--green);
+  border-color: var(--green);
+  color: var(--white);
+}
+.bt-no {
+  background-color: var(--red);
+  border-color: var(--red);
+  color: var(--white);
+}
+.bt-yes:hover {
+  background-color: var(--almond);
+  border-color: var(--almond);
+  color: var(--brown);
+}
+.bt-no:hover {
+  background-color: var(--brown);
+  border-color: var(--brown);
+  color: var(--almond);
+}
+.bt-account {
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+}
 
 /* Pizzas Page --------------------------------------------------------------------------------- */
 
@@ -173,22 +199,34 @@ main {
 .pizza-box {
   background-color: var(--brown);
   border-radius: 20px;
-  
+  width: 300px;
 }
 .pizza-box h3 {
   color: var(--almond);
   font-family: 'DM Serif Display', serif;
+  font-size: 2em;
 }
 .pizza-box p {
   color: var(--isabelline);
-  letter-spacing: 0.2em;
+  letter-spacing: 0.09em;
+  font-style: italic;
+}
+.pizza-box img {
+  width: 120px;
+  object-fit: cover;
+}
+.pizza-box button {
+  padding: auto;
 }
 
 
 /* Modal --------------------------------------------------------------------------------- */
 
-.bg-body-modal {
-  background-color: var(--isabelline);
+.ext-modal h1 {
+  color: var(--brown);
+}
+.ext-modal h4 {
+  color: var(--brown);
 }
 
 
@@ -197,6 +235,20 @@ main {
 .cardspace {
   width: 300px;
 }
+.nbr-pizza {
+  width: 60px;
+}
+
+/* Account page ------------------------------------------------------------------------------------- */
+
+.acc-link {
+  text-decoration: underline;
+  color: var(--green);
+}
+.acc-link:hover {
+  color: var(--red);
+}
+
 
 /* Footer ---------------------------------------------------------------------------------------- */
 

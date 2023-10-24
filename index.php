@@ -1,4 +1,5 @@
 <?php
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,19 +19,19 @@
 <!-- Navbar -->
 <nav class="navbar sticky-top navbar-expand-md">
   <div class="container-fluid">
-    <a class="navbar-brand ms-5" href="#">
+    <a class="navbar-brand ms-4" href="#">
       <img src="./assets/images/Logo_Gustavo.png" alt="logo" width="70">
     </a>
-    <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse mt-sm-0 mt-4 ms-4" id="navbarTogglerDemo02">
       <ul class="navbar-nav ms-auto me-4">
-        <li class="nav-item mb-sm-0 me-4 mb-4 ms-4">
+        <li class="nav-item mb-sm-0 me-4 mb-4 ms-3">
           <a class="nav-link py-sm-3" aria-current="page" href="#">COMMANDER</a>
         </li>
-        <li class="nav-item mb-sm-0 me-4 mb-4 ms-4">
-          <a class="nav-link py-sm-3" href="#">CONTACT</a>
+        <li class="nav-item mb-sm-0 me-4 mb-4 ms-3">
+          <a class="nav-link py-sm-3" href="#footer">CONTACT</a>
         </li>
         <li class="nav-item mb-sm-0 mb-4 ms-0">
           <a role="button" class="btn nav-link px-4 py-3 bt-classic">SE CONNECTER</a>
@@ -49,12 +50,14 @@
     rgba(0, 0, 0, 0.9),
     rgba(0, 0, 0, 0.6)), url(./assets/images/hero.png);">
   <div>
-    <div class="d-flex justify-content-center align-items-center">
+    <div class="d-flex justify-content-center">
       <div class="txt-box">
         <h1 class="mb-5">Traditionnelles, Généreuses, Gourmandes</h1>
         <h4 class="mb-5">Dégustez les pizzas qui raviront vos papilles !</h4>
-        <button type="button" class="btn px-5 py-2 bt-other">COMMANDER</button>
-        <button type="button" class="btn px-5 py-2 bt-classic">CONTACT</button>
+        <div>
+          <button type="button" class="btn px-5 py-2 bt-other">COMMANDER</button>
+          <button type="button" class="btn px-5 py-2 bt-classic">CONTACT</button>
+        </div>
       </div>
     </div>
   </div>
@@ -90,7 +93,7 @@
 </div>
 
 <!-- Footer -->
-<footer class="container-fluid text-center">
+<footer class="container-fluid text-center" id="footer">
   <div class="row py-4">
     <div class="col-md-4 pt-5">
       <a class="navbar-brand" href="#">

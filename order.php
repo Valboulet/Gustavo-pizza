@@ -53,42 +53,95 @@
           <ul class="list-group">
             <li class="list-group-item">
               <div class="d-flex justify-content-between align-item-center">
-                <h5>La Calzone</h5>
-                <button class="btn-close" type="button" aria-label="Delete"></button>
+                <h5>La Vegetariano</h5>
+                <button class="btn-close" type="button" aria-label="Delete" data-bs-toggle="modal" data-bs-target="#deleteOrderlineModal" data-bs-whatever=""></button>
               </div>
-              <small>Extra Basilic</small><br>
-              <small>Evian 50cl</small>
+              <div class="d-flex justify-content-between align-item-center">
+                <div>
+                  <small>Extra Basilic</small><br>
+                  <small>Evian 50cl</small>
+                </div>
+                <select class="form-select nbr-pizza" aria-label="Default select example">
+                  <option selected>1</option>
+                  <option value="1">2</option>
+                  <option value="2">3</option>
+                  <option value="3">4</option>
+                </select>
+              </div>
             </li>
             <li class="list-group-item">
               <div class="d-flex justify-content-between align-item-center">
-                <h5>La Primavera</h5>
-                <button class="btn-close" type="button" aria-label="Delete"></button>
+                <h5>La Salmone</h5>
+                <button class="btn-close" type="button" aria-label="Delete" data-bs-toggle="modal" data-bs-target="#deleteOrderlineModal" data-bs-whatever=""></button>
               </div>
-              <small>Extra Viande hachée</small><br>
-              <small>Heineken 25cl</small>
-            </li>
-            <li class="list-group-item">
               <div class="d-flex justify-content-between align-item-center">
-                <h5>La Primavera</h5>
-                <button class="btn-close" type="button" aria-label="Delete"></button>
+                <div>
+                  <small>Tropicana 33cl</small><br>
+                </div>
+                <select class="form-select flex-end nbr-pizza" aria-label="Default select example">
+                  <option selected>1</option>
+                  <option value="1">2</option>
+                  <option value="2">3</option>
+                  <option value="3">4</option>
+                </select>
               </div>
-              <small>Extra Viande hachée</small><br>
-              <small>Heineken 25cl</small>
             </li>
           </ul>
-          <div class="text-center pt-3">
+          </div>
+          <div class="text-center py-2">
             <h4>Total PHP €</h4>
           </div>
+          <div class="collapse text-center" id="hourSelect">
+            <div class="card card-body">
+              <h5>Choissisez une heure</h5>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Heure</option>
+                <option value="1">18:30</option>
+                <option value="2">19:00</option>
+                <option value="3">19:30</option>
+                <option value="3">20:00</option>
+                <option value="3">20:30</option>
+                <option value="3">21:00</option>
+                <option value="3">21:30</option>
+                <option value="3">22:00</option>
+                <option value="3">22:30</option>
+              </select>
+              <div class="form-floating my-2">
+                <textarea class="form-control" placeholder="Ajouter un message" id="floatingTextarea2" style="height: 200px"></textarea>
+                <label for="floatingTextarea2">Message</label>
+              </div>
+            </div>
         </div>
         <div class="card-footer text-center py-4">
-          <button type="button" class="btn px-5 py-2 mb-2 bt-other">AJOUTER</button>
-          <button type="button" class="btn px-5 py-2 mt-1 bt-classic">VALIDER</button>
+          <button type="button" class="btn px-5 py-2 mb-2 bt-other">AJOUTER UNE PIZZA</button>
+          <button type="button" class="btn px-5 py-2 mt-1 bt-classic" data-bs-toggle="collapse" data-bs-target="#hourSelect" aria-expanded="false" aria-controls="hourSelect">ÉTAPE SUIVANTE</button>
         </div>
       </div>
     </div>
   </div>
 
 </main>
+
+<!-- Delete orderline Modal -->
+
+<div class="modal fade" id="deleteOrderlineModal" tabindex="-1" aria-labelledby="deleteOrderlineModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-2" id="deleteOrderlineModalLabel">Suppression</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Voulez-vous vraiment supprimer cette ligne ?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary bt-yes">OUI</button>
+          <button type="button" class="btn btn-primary bt-no">NON</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 <!-- Footer -->
 <footer class="container-fluid text-center">

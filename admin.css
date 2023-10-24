@@ -23,16 +23,15 @@
   body {
     font-family: "Montserrat", sans-serif;
     background-color: var(--almond);
-    color: var(--black);
+    color: var(--brown);
     font-weight: 300;
   }
   
   h1,
   h2,
-  h3,
-  h4,
-  h5 {
+  h3 {
     font-weight: 500;
+    font-family: 'DM Serif Display', serif;
   }
   
   a {
@@ -57,13 +56,10 @@
   font-weight: 400;
   font-size: 0.8em;
 }
-.nav-link:visited {
+.nav-link:hover {
   color: var(--red);
 }
-.nav-link:hover {
-  color: var(--almond);
-}
-.nav-link:active {
+.nav-link:focus {
   color: var(--red);
 }
 
@@ -98,6 +94,10 @@
   border-radius: 24px;
   font-size: 16px;
 }
+.acronym:hover {
+  background-color: var(--brown);
+  color: var(--white);
+}
 .cd-product {
   min-height: 350px;
 }
@@ -119,12 +119,10 @@
 .bt-yes {
   background-color: var(--green);
   border-color: var(--green);
-  font-size: 1.2em;
 }
 .bt-no {
   background-color: var(--red);
   border-color: var(--red);
-  font-size: 1.2em;
 }
 .bt-yes:hover {
   background-color: var(--almond);
