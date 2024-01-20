@@ -1,4 +1,4 @@
--- Active: 1689342976980@@127.0.0.1@3306@pizzeria
+-- Active: 1695307432997@@127.0.0.1@3306@pizzeria
 CREATE DATABASE pizzeria
     DEFAULT CHARACTER SET = 'utf8mb4';
 CREATE TABLE users (
@@ -17,9 +17,8 @@ CREATE TABLE customers (
 CREATE TABLE orders (
     id CHAR(36) NOT NULL,
     date DATE NOT NULL,
-    hour TIME NOT NULL DEFAULT '18:30',
+    hour TIME NOT NULL,
     message TEXT(500),
-    state BOOLEAN DEFAULT 0,
     customer_id CHAR(36) NOT NULL,
     FOREIGN KEY (customer_id) REFERENCES customers(user_id) ON DELETE CASCADE,
     PRIMARY KEY (id, customer_id) -- Composition with customers table
@@ -27,17 +26,20 @@ CREATE TABLE orders (
 CREATE TABLE pizzas (
     id TINYINT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(20) NOT NULL,
-    price DECIMAL(4,2) UNSIGNED NOT NULL
+    price DECIMAL(4,2) UNSIGNED NOT NULL,
+    availability BOOLEAN DEFAULT 1
 );
 CREATE TABLE extras (
     id TINYINT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(30) NOT NULL,
-    price DECIMAL(3,2) UNSIGNED NOT NULL
+    price DECIMAL(3,2) UNSIGNED NOT NULL,
+    availability BOOLEAN DEFAULT 1
 );
 CREATE TABLE drinks (
     id TINYINT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(30) NOT NULL,
-    price DECIMAL(3,2) UNSIGNED NOT NULL
+    price DECIMAL(3,2) UNSIGNED NOT NULL,
+    availability BOOLEAN DEFAULT 1
 );
 CREATE TABLE orderlines (
     id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
