@@ -1,0 +1,322 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+
+:root {
+  --green: #00A676;
+  --white: #ffffff;
+  --almond: #E0D0C1;
+  --isabelline: #f3eae1;
+  --brown: #69423A;
+  --red: #CC3000;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--white);
+  color: var(--brown);
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 200;
+  font-family: 'DM Serif Display', serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+/* Login Page ---------------------------------------------------------------------------------------- */
+
+.logo-form {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--isabelline);
+}
+.logo-form .logo {
+  width: 200px;
+}
+.logo-form p {
+  color: var(--brown);
+}
+.connexion button {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+.connexion button:hover {
+  background-color: #69423A;
+  border-color: #69423A;
+}
+@media screen and (min-width:576px) {
+  .logo-form .connexion {
+    width: 425px;
+}
+}
+
+/* Navbar ---------------------------------------------------------------------------------------- */
+
+.navbar {
+  max-width: 1440px;
+  margin: auto;
+  background-color: var(--almond);
+}
+.nav-link {
+  color: var(--brown);
+  letter-spacing: 0.25em;
+  font-size: 0.8em;
+}
+.nav-link:hover {
+  color: var(--green);
+}
+.nav-link:focus {
+  color: var(--green);
+}
+
+/* Main ---------------------------------------------------------------------------------------- */
+
+.hero {
+  margin: auto;
+  max-width: 1440px;
+  min-height: 600px;
+}
+.txt-box {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding: 50px;
+}
+.txt-box h1 {
+  color: var(--almond);
+  font-size: 3em;
+  font-family: 'DM Serif Display', serif;
+}
+.txt-box h4 {
+  color: var(--almond);
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.txt-box button {
+  margin: 2%;
+}
+.txt-box button:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+.content-box {
+  background-color: var(--isabelline);
+  max-width: 1440px;
+  margin: auto;
+  color: var(--brown);
+}
+.content-box h2 {
+  font-size: 2.5em;
+}
+.last-button {
+  max-width: 1440px;
+  width: 100%;
+  height: 200px;
+  background-color: var(--isabelline);
+}
+.last-button button {
+  margin: auto;
+}
+
+/* Button --------------------------------------------------------------------------------- */
+
+.bt-classic{
+  background-color: var(--brown);
+  color: var(--white);
+  letter-spacing: 0.2em;
+}
+.bt-classic:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+.bt-other{
+  background-color: var(--almond);
+  color: var(--brown);
+  letter-spacing: 0.2em;
+}
+.bt-other:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+.bt-yes {
+  background-color: var(--green);
+  border-color: var(--green);
+  color: var(--white);
+  letter-spacing: 0.2em;
+}
+.bt-no {
+  background-color: var(--red);
+  border-color: var(--red);
+  color: var(--white);
+  letter-spacing: 0.2em;
+
+}
+.bt-yes:hover {
+  background-color: var(--almond);
+  border-color: var(--almond);
+  color: var(--brown);
+}
+.bt-no:hover {
+  background-color: var(--brown);
+  border-color: var(--brown);
+  color: var(--almond);
+}
+.bt-account {
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+}
+
+/* Pizzas Page --------------------------------------------------------------------------------- */
+
+main {
+  max-width: 1440px;
+  margin: auto;
+  background-color: var(--isabelline);
+}
+
+.cart-div {
+  z-index: 999;
+  width: 70px;
+  height: 70px;
+  padding: 1em;
+  background-color: var(--brown);
+  border-radius: 0 0 20% 20%;
+  cursor: pointer;
+}
+
+.cart-div:hover,
+.cart-div:focus {
+  background-color: var(--red);
+}
+
+
+.cart {
+  font-size: 2em;
+  color: var(--white);
+}
+
+.pizza-title h1 {
+  color: var(--brown);
+  font-size: 3em;
+}
+
+.pizza-box {
+  background-color: var(--brown);
+  border-radius: 20px;
+  width: 300px;
+}
+.pizza-box h3 {
+  color: var(--almond);
+  font-family: 'DM Serif Display', serif;
+  font-size: 2em;
+}
+.pizza-box p {
+  color: var(--isabelline);
+  letter-spacing: 0.09em;
+  font-style: italic;
+}
+.pizza-box img {
+  width: 120px;
+  object-fit: cover;
+}
+.pizza-box button {
+  padding: auto;
+}
+
+
+/* Modal --------------------------------------------------------------------------------- */
+
+.ext-modal h1 {
+  color: var(--brown);
+}
+.ext-modal h4 {
+  color: var(--brown);
+}
+
+/* Order Offcanvas --------------------------------------------------------------------------------- */
+
+.order h2 {
+  color: var(--brown);
+}
+
+.order-price {
+  background-color: var(--brown);
+  color: var(--white);
+  border-radius: 5px;
+}
+
+.nbr-pizza {
+  width: 60px;
+}
+
+.order .bt-no,
+.order .bt-yes {
+  letter-spacing: 0.1em;
+  font-size: 0.9em;
+}
+
+/* Account page ------------------------------------------------------------------------------------- */
+
+.acc-link {
+  text-decoration: underline;
+  color: var(--green);
+}
+
+.acc-link:hover {
+  color: var(--red);
+}
+
+.cardspace {
+  width: 450px;
+}
+
+.cardspace a {
+  width: 100%;
+}
+
+.interspace {
+  margin: 0 10px;
+}
+
+
+/* Footer ---------------------------------------------------------------------------------------- */
+
+footer {
+  background-color: var(--brown);
+  max-width: 1440px;
+  color: var(--almond);
+  font-weight: 300;
+}
+footer i {
+  font-size: 2em;
+}
+footer i:hover {
+  color: var(--white);
+}
+footer span {
+ font-weight: 400;
+ font-size: 1.2em;
+}
